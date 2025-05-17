@@ -1,0 +1,19 @@
+{
+  "name": "jokebot",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node index.js",
+    "migrate": "node-pg-migrate up",
+    "migrate-down": "node-pg-migrate down",
+    "import-jokes": "node import_jokes.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "node-telegram-bot-api": "^0.66.0",
+    "pg": "^8.16.0"
+  }
+}
